@@ -64,16 +64,16 @@ header p {
 .clickable-zone {
     position: absolute;
     cursor: pointer;
-    background-color: rgba(210, 180, 140, 0.2); /* Песочный полупрозрачный */
-    border: 1px solid rgba(180, 160, 120, 0.5); /* Песочная окантовка */
+    border: 1px solid rgba(210, 180, 140, 0.3); /* Бледная песочная рамка */
     border-radius: 4px;
-    transition: background-color 0.3s;
+    transition: border-color 0.3s;
     pointer-events: auto;
     overflow: hidden;
+    background: none; /* Убираем фон */
 }
 
 .clickable-zone:hover {
-    background-color: rgba(210, 180, 140, 0.4); /* Ярче при наведении */
+    border-color: rgba(210, 180, 140, 0.6); /* Чуть ярче при наведении */
 }
 
 /* Превью изображения в зоне */
@@ -82,12 +82,13 @@ header p {
     height: 100%;
     object-fit: cover;
     display: block;
-    opacity: 0.7;
-    transition: opacity 0.3s;
+    opacity: 0.9;
+    transition: opacity 0.3s, transform 0.3s;
 }
 
 .clickable-zone:hover .zone-preview {
     opacity: 1;
+    transform: scale(1.02);
 }
 
 /* Зоны в режиме редактора */

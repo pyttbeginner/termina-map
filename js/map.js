@@ -7,28 +7,31 @@ let worldZones = [
         "id": "prehevil___eastern_outskirts2",
         "name": "Prehevil_-_Eastern_Outskirts2",
         "x": 886,
-        "y": 320,
-        "width": 105,
-        "height": 70,
-        "outdoor": "Prehevil_-_Eastern_Outskirts2.png"
+        "y": 308,
+        "width": 113,
+        "height": 90,
+        "outdoor": "Prehevil_-_Eastern_Outskirts2.png",
+        "thumb": "120px-Prehevil_-_Eastern_Outskirts2.jpg"
     },
     {
-        "id": "prehevil___temple_site__28museum_292",
+        "id": "prehevil___temple_site_museum2",
         "name": "Prehevil_-_Temple_Site_Museum2",
-        "x": 563,
+        "x": 560,
         "y": 126,
-        "width": 65,
-        "height": 89,
-        "outdoor": "Prehevil_-_Temple_Site_Museum2.png"
+        "width": 69,
+        "height": 97,
+        "outdoor": "Prehevil_-_Temple_Site_Museum2.png",
+        "thumb": "87px-Prehevil_-_Temple_Site_%28Museum%292.jpg"
     },
     {
-        "id": "prehevil___west__28back_area_292",
+        "id": "prehevil___west_back_area2",
         "name": "Prehevil_-_West_Back_Area2",
-        "x": 94,
-        "y": 160,
+        "x": 101,
+        "y": 171,
         "width": 130,
         "height": 100,
-        "outdoor": "Prehevil_-_West_Back_Area2.png"
+        "outdoor": "Prehevil_-_West_Back_Area2.png",
+        "thumb": "120px-Prehevil_-_West_%28Back_Area%292.jpg"
     },
     {
         "id": "old_town___slums2",
@@ -37,25 +40,28 @@ let worldZones = [
         "y": 470,
         "width": 87,
         "height": 62,
-        "outdoor": "Old_Town_-_Slums2.png"
+        "outdoor": "Old_Town_-_Slums2.png",
+        "thumb": "120px-Old_Town_-_Slums2.jpg"
     },
     {
         "id": "lake",
         "name": "Lake",
         "x": 861,
         "y": 483,
-        "width": 100,
-        "height": 135,
-        "outdoor": "Lake2.png"
+        "width": 104,
+        "height": 147,
+        "outdoor": "Lake2.png",
+        "thumb": "71px-Lake2.jpg"
     },
     {
         "id": "maiden_forest2",
         "name": "Maiden_Forest2",
-        "x": 356,
-        "y": 469,
-        "width": 130,
-        "height": 124,
-        "outdoor": "Maiden_Forest2.png"
+        "x": 351,
+        "y": 470,
+        "width": 139,
+        "height": 138,
+        "outdoor": "Maiden_Forest2.png",
+        "thumb": "120px-Maiden_Forest2.jpg"
     },
     {
         "id": "outskirts_of_prehevil___train",
@@ -64,16 +70,18 @@ let worldZones = [
         "y": 649,
         "width": 225,
         "height": 144,
-        "outdoor": "Outskirts_of_Prehevil_-_Train3.png"
+        "outdoor": "Outskirts_of_Prehevil_-_Train3.png",
+        "thumb": "120px-Outskirts_of_Prehevil_-_Train3.jpg"
     },
     {
-        "id": "prehevil___west__28news_agency_292",
+        "id": "prehevil___west_news_agency2",
         "name": "Prehevil_-_West_News_Agency2",
-        "x": 232,
-        "y": 186,
-        "width": 107,
-        "height": 114,
-        "outdoor": "Prehevil_-_West_News_Agency2.png"
+        "x": 231,
+        "y": 159,
+        "width": 122,
+        "height": 135,
+        "outdoor": "Prehevil_-_West_News_Agency2.png",
+        "thumb": "106px-Prehevil_-_West_%28News_Agency%292.jpg"
     },
     {
         "id": "island",
@@ -82,7 +90,8 @@ let worldZones = [
         "y": 472,
         "width": 59,
         "height": 63,
-        "outdoor": "Island.png"
+        "outdoor": "Island.png",
+        "thumb": "120px-D%27%C3%A1bel%27s_Island2.jpg"
     },
     {
         "id": "path_to_river2",
@@ -91,178 +100,198 @@ let worldZones = [
         "y": 620,
         "width": 139,
         "height": 84,
-        "outdoor": "Path_to_River2.png"
+        "outdoor": "Path_to_River2.png",
+        "thumb": "120px-Path_to_River2.jpg"
     },
     {
         "id": "riverside2",
         "name": "Riverside2",
-        "x": 809,
-        "y": 551,
-        "width": 47,
-        "height": 136,
-        "outdoor": "Riverside2.png"
+        "x": 818,
+        "y": 549,
+        "width": 68,
+        "height": 139,
+        "outdoor": "Riverside2.png",
+        "thumb": "75px-Riverside2.jpg"
     },
     {
         "id": "deep_woods5",
         "name": "Deep_Woods5",
-        "x": 182,
-        "y": 562,
-        "width": 146,
-        "height": 109,
-        "outdoor": "Deeper_Woods5.png"
+        "x": 190,
+        "y": 556,
+        "width": 161,
+        "height": 121,
+        "outdoor": "Deeper_Woods5.png",
+        "thumb": "120px-Deeper_Woods5.jpg"
     },
     {
         "id": "deep_woods2",
         "name": "Deep_Woods2",
-        "x": 222,
-        "y": 427,
-        "width": 133,
-        "height": 93,
-        "outdoor": "Deep_Woods2.png"
+        "x": 218,
+        "y": 419,
+        "width": 150,
+        "height": 121,
+        "outdoor": "Deep_Woods2.png",
+        "thumb": "120px-Deep_Woods2.jpg"
     },
     {
         "id": "prehevil___ruined_streets2",
         "name": "Prehevil_-_Ruined_Streets2",
-        "x": 229,
-        "y": 303,
-        "width": 94,
-        "height": 107,
-        "outdoor": "Prehevil_-_Ruined_Streets2.png"
+        "x": 227,
+        "y": 296,
+        "width": 113,
+        "height": 119,
+        "outdoor": "Prehevil_-_Ruined_Streets2.png",
+        "thumb": "103px-Prehevil_-_Ruined_Streets2.jpg"
     },
     {
         "id": "mausoleum_alley2",
         "name": "Mausoleum_Alley2",
         "x": 764,
         "y": 222,
-        "width": 85,
-        "height": 57,
-        "outdoor": "Mausoleum_Alley2.png"
+        "width": 109,
+        "height": 81,
+        "outdoor": "Mausoleum_Alley2.png",
+        "thumb": "120px-Mausoleum_Alley2.jpg"
     },
     {
         "id": "old_town___gate2",
         "name": "Old_Town_-_Gate2",
-        "x": 493,
-        "y": 436,
-        "width": 138,
-        "height": 103,
-        "outdoor": "Old_Town_-_Gate2.png"
+        "x": 489,
+        "y": 415,
+        "width": 144,
+        "height": 106,
+        "outdoor": "Old_Town_-_Gate2.png",
+        "thumb": "120px-Old_Town_-_Gate2.jpg"
     },
     {
-        "id": "old_town___mayor_27s_manor2",
+        "id": "old_town___mayors_manor2",
         "name": "Old_Town_-_Mayors_Manor2",
-        "x": 634,
-        "y": 413,
-        "width": 142,
-        "height": 148,
-        "outdoor": "Old_Town_-_Mayors_Manor2.png"
+        "x": 631,
+        "y": 407,
+        "width": 152,
+        "height": 144,
+        "outdoor": "Old_Town_-_Mayors_Manor2.png",
+        "thumb": "120px-Old_Town_-_Mayor%27s_Manor2.jpg"
     },
     {
         "id": "outskirts_of_prehevil___abandoned_house2",
         "name": "Outskirts_of_Prehevil_-_Abandoned_House2",
         "x": 484,
         "y": 554,
-        "width": 134,
-        "height": 74,
-        "outdoor": "Outskirts_of_Prehevil_-_Abandoned_House2.png"
+        "width": 139,
+        "height": 84,
+        "outdoor": "Outskirts_of_Prehevil_-_Abandoned_House2.png",
+        "thumb": "120px-Outskirts_of_Prehevil_-_Abandoned_House2.jpg"
     },
     {
         "id": "prehevil___staircase2",
         "name": "Prehevil_-_Staircase2",
-        "x": 527,
-        "y": 288,
+        "x": 526,
+        "y": 276,
         "width": 82,
         "height": 137,
-        "outdoor": "Prehevil_-_Staircase2.png"
+        "outdoor": "Prehevil_-_Staircase2.png",
+        "thumb": "65px-Prehevil_-_Staircase2.jpg"
     },
     {
         "id": "outskirts_of_prehevil___broken_shack2",
         "name": "Outskirts_of_Prehevil_-_Broken_Shack2",
-        "x": 465,
-        "y": 640,
-        "width": 102,
-        "height": 72,
-        "outdoor": "Outskirts_of_Prehevil_-_Broken_Shack2.png"
+        "x": 470,
+        "y": 642,
+        "width": 114,
+        "height": 67,
+        "outdoor": "Outskirts_of_Prehevil_-_Broken_Shack2.png",
+        "thumb": "120px-Outskirts_of_Prehevil_-_Broken_Shack2.jpg"
     },
     {
         "id": "deepest_woods2",
         "name": "Deepest_Woods2",
-        "x": 107,
-        "y": 436,
+        "x": 105,
+        "y": 441,
         "width": 116,
         "height": 111,
-        "outdoor": "Deepest_Woods2.png"
+        "outdoor": "Deepest_Woods2.png",
+        "thumb": "120px-Deepest_Woods2.jpg"
     },
     {
         "id": "hidden_spot2",
         "name": "Hidden_Spot2",
-        "x": 119,
-        "y": 562,
-        "width": 59,
-        "height": 54,
-        "outdoor": "Hidden_Spot2.png"
+        "x": 129,
+        "y": 559,
+        "width": 61,
+        "height": 58,
+        "outdoor": "Hidden_Spot2.png",
+        "thumb": null
     },
     {
         "id": "prehevil___north_west2",
         "name": "Prehevil_-_North-West2",
-        "x": 261,
-        "y": 86,
-        "width": 150,
-        "height": 72,
-        "outdoor": "Prehevil_-_North-West2.png"
+        "x": 258,
+        "y": 65,
+        "width": 152,
+        "height": 92,
+        "outdoor": "Prehevil_-_North-West2.png",
+        "thumb": "120px-Prehevil_-_North-West2.jpg"
     },
     {
-        "id": "prehevil___temple_site__28hollow_tower_292",
+        "id": "prehevil___temple_site_hollow_tower2",
         "name": "Prehevil_-_Temple_Site_Hollow_Tower2",
-        "x": 629,
-        "y": 114,
+        "x": 628,
+        "y": 143,
         "width": 150,
-        "height": 120,
-        "outdoor": "Prehevil_-_Temple_Site_Hollow_Tower2.png"
+        "height": 125,
+        "outdoor": "Prehevil_-_Temple_Site_Hollow_Tower2.png",
+        "thumb": "111px-Prehevil_-_Temple_Site_%28Hollow_Tower%292.jpg"
     },
     {
         "id": "prehevil___central2",
         "name": "Prehevil_-_Central2",
-        "x": 606,
-        "y": 302,
-        "width": 179,
-        "height": 85,
-        "outdoor": "Prehevil_-_Central2.png"
+        "x": 604,
+        "y": 283,
+        "width": 182,
+        "height": 107,
+        "outdoor": "Prehevil_-_Central2.png",
+        "thumb": "120px-Prehevil_-_Central2.jpg"
     },
     {
         "id": "prehevil___shopping_street2",
         "name": "Prehevil_-_Shopping_Street2",
-        "x": 398,
-        "y": 199,
-        "width": 146,
-        "height": 71,
-        "outdoor": "Prehevil_-_Shopping_Street2.png"
+        "x": 394,
+        "y": 144,
+        "width": 167,
+        "height": 99,
+        "outdoor": "Prehevil_-_Shopping_Street2.png",
+        "thumb": "120px-Prehevil_-_Shopping_Street2.jpg"
     },
     {
         "id": "prehevil___east2",
         "name": "Prehevil_-_East2",
-        "x": 785,
-        "y": 303,
-        "width": 102,
-        "height": 84,
-        "outdoor": "Prehevil_-_East2.png"
+        "x": 783,
+        "y": 301,
+        "width": 107,
+        "height": 95,
+        "outdoor": "Prehevil_-_East2.png",
+        "thumb": "120px-Prehevil_-_East2.jpg"
     },
     {
-        "id": "prehevil___back_alleys__28sylvian_27s_square_292",
+        "id": "prehevil___back_alleys_sylvians_square2",
         "name": "Prehevil_-_Back_Alleys_Sylvians_Square2",
-        "x": 322,
-        "y": 283,
+        "x": 326,
+        "y": 274,
         "width": 104,
         "height": 122,
-        "outdoor": "Prehevil_-_Back_Alleys_Sylvians_Square2.png"
+        "outdoor": "Prehevil_-_Back_Alleys_Sylvians_Square2.png",
+        "thumb": "120px-Prehevil_-_Back_Alleys_%28Sylvian%27s_Square%292.jpg"
     },
     {
         "id": "prehevil___back_alleys2",
         "name": "Prehevil_-_Back_Alleys2",
-        "x": 421,
-        "y": 285,
-        "width": 108,
-        "height": 108,
-        "outdoor": "Prehevil_-_Back_Alleys2.png"
+        "x": 422,
+        "y": 253,
+        "width": 113,
+        "height": 127,
+        "outdoor": "Prehevil_-_Back_Alleys2.png",
+        "thumb": "76px-Prehevil_-_Back_Alleys2.jpg"
     }
 ];
 
@@ -605,10 +634,10 @@ function renderWorldZones() {
             zoneEl.title = zone.name || `Зона ${index + 1}`;
             zoneEl.addEventListener('click', () => openOutdoorModal(zone));
             
-            // Добавляем превью изображения
-            if (zone.outdoor) {
+            // Добавляем превью изображения (миниатюра или полная карта)
+            if (zone.thumb || zone.outdoor) {
                 const img = document.createElement('img');
-                img.src = `maps_outdor/${zone.outdoor}`;
+                img.src = zone.thumb ? `maps_mini/${zone.thumb}` : `maps_outdor/${zone.outdoor}`;
                 img.alt = zone.name || `Зона ${index + 1}`;
                 img.className = 'zone-preview';
                 zoneEl.appendChild(img);

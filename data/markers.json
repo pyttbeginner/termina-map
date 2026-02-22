@@ -1,0 +1,49 @@
+{
+    "enemies": [
+        {
+            "x": 250,
+            "y": 180,
+            "name": "Назgul (пример)",
+            "map": "Prehevil_-_Central2.jpg"
+        }
+    ],
+    "chests": [
+        {
+            "x": 320,
+            "y": 220,
+            "name": "Сундук с лутом",
+            "map": "Prehevil_-_Central2.jpg"
+        }
+    ],
+    "beds": [
+        {
+            "x": 150,
+            "y": 100,
+            "name": "Кровать в таверне",
+            "map": "Prehevil_-_Central2.jpg"
+        }
+    ],
+    "buildings": [
+        {
+            "x": 200,
+            "y": 150,
+            "name": "Таверна",
+            "map": "Prehevil_-_Central2.jpg",
+            "buildingId": "tavern"
+        },
+        {
+            "x": 400,
+            "y": 300,
+            "name": "Церковь Вселл-мер",
+            "map": "Prehevil_-_Central2.jpg",
+            "buildingId": "church"
+        },
+        {
+            "x": 180,
+            "y": 280,
+            "name": "Универмаг",
+            "map": "Prehevil_-_Central2.jpg",
+            "buildingId": "department_store"
+        }
+    ]
+}

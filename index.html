@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fear & Hunger 2: Termina — Интерактивная карта</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Главная страница: бумажная карта -->
+    <div id="main-container">
+        <header>
+            <h1>Fear & Hunger 2: Termina</h1>
+            <p>Интерактивная карта Прехевила и окрестностей</p>
+        </header>
+
+        <!-- Панель редактора -->
+        <div id="editor-panel" class="editor-panel hidden">
+            <h3>Редактор зон</h3>
+            <button id="add-zone-btn" class="editor-btn">+ Добавить зону</button>
+            <button id="export-zones-btn" class="editor-btn">💾 Экспорт зон (JSON)</button>
+            <button id="toggle-editor-btn" class="editor-btn">✏️ Выйти из редактора</button>
+            <p class="editor-hint">Перетаскивай зоны мышкой. Тяни за правый нижний угол для изменения размера.</p>
+        </div>
+
+        <div id="world-map-container">
+            <img src="maps_outdor/map_out_gr.jpg" alt="Карта мира" id="world-map">
+            <div id="overlay-layer"></div>
+        </div>
+
+        <div id="legend">
+            <h3>Условные обозначения</h3>
+            <div class="legend-item">
+                <span class="marker enemy"></span> Сильный враг
+            </div>
+            <div class="legend-item">
+                <span class="marker chest"></span> Сундук
+            </div>
+            <div class="legend-item">
+                <span class="marker bed"></span> Точка сохранения (кровать)
+            </div>
+            <div class="legend-item">
+                <span class="marker building"></span> Вход в здание
+            </div>
+            <div class="legend-item">
+                <span class="marker editor-mode"></span> Режим редактора (вкл/выкл клавишей E)
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно: редактирование зоны -->
+    <div id="zone-edit-modal" class="modal">
+        <div class="modal-content modal-small">
+            <button class="close-btn" onclick="closeZoneEditModal()">&times;</button>
+            <h2>Редактировать зону</h2>
+            <form id="zone-edit-form">
+                <input type="hidden" id="edit-zone-id">
+                <div class="form-group">
+                    <label for="edit-zone-name">Название:</label>
+                    <input type="text" id="edit-zone-name" required placeholder="Например: Prehevil_-_Central">
+                </div>
+                <div class="form-group">
+                    <label for="edit-zone-x">X (пиксели):</label>
+                    <input type="number" id="edit-zone-x" required>
+                </div>
+                <div class="form-group">
+                    <label for="edit-zone-y">Y (пиксели):</label>
+                    <input type="number" id="edit-zone-y" required>
+                </div>
+                <div class="form-group">
+                    <label for="edit-zone-width">Ширина:</label>
+                    <input type="number" id="edit-zone-width" required>
+                </div>
+                <div class="form-group">
+                    <label for="edit-zone-height">Высота:</label>
+                    <input type="number" id="edit-zone-height" required>
+                </div>
+                <div class="form-group">
+                    <label for="edit-zone-outdoor">Файл карты (outdoor):</label>
+                    <input type="text" id="edit-zone-outdoor" placeholder="Prehevil_-_Central2.jpg">
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="editor-btn">Сохранить</button>
+                    <button type="button" class="editor-btn delete-btn" id="delete-zone-btn">Удалить зону</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно: карта улицы (outdoor) -->
+    <div id="outdoor-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeOutdoorModal()">&times;</button>
+            <h2 id="outdoor-title"></h2>
+            <div id="outdoor-toolbar" class="outdoor-toolbar hidden">
+                <button id="add-building-marker-btn" class="toolbar-btn">🏠 Добавить здание</button>
+                <button id="add-enemy-marker-btn" class="toolbar-btn">⚔️ Враг</button>
+                <button id="add-chest-marker-btn" class="toolbar-btn">📦 Сундук</button>
+                <button id="add-bed-marker-btn" class="toolbar-btn">🛏️ Кровать</button>
+                <button id="export-markers-btn" class="toolbar-btn">💾 Экспорт меток</button>
+                <span class="toolbar-hint">Выберите тип метки для добавления</span>
+            </div>
+            <div id="outdoor-map-container"></div>
+            <div id="outdoor-markers-layer"></div>
+        </div>
+    </div>
+
+    <!-- Модальное окно: помещение (indoor) -->
+    <div id="indoor-modal" class="modal">
+        <div class="modal-content modal-large">
+            <button class="close-btn" onclick="closeIndoorModal()">&times;</button>
+            <h2 id="indoor-title"></h2>
+            <div id="indoor-maps-container"></div>
+        </div>
+    </div>
+
+    <script src="js/map.js"></script>
+</body>
+</html>

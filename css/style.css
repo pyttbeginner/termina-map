@@ -1,0 +1,482 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5dc; /* Песочный фон */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Заголовок */
+header {
+    background-color: #e8e8e8;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #8b7355;
+}
+
+header h1 {
+    color: #5c4a3d;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #7a6b5d;
+    font-style: italic;
+}
+
+/* Контейнер карты мира */
+#main-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#world-map-container {
+    position: relative;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+#world-map {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid #8b7355;
+    border-radius: 4px;
+}
+
+#overlay-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* Кликабельные зоны на карте */
+.clickable-zone {
+    position: absolute;
+    cursor: pointer;
+    background-color: rgba(210, 180, 140, 0.2); /* Песочный полупрозрачный */
+    border: 1px solid rgba(180, 160, 120, 0.5); /* Песочная окантовка */
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    pointer-events: auto;
+    overflow: hidden;
+}
+
+.clickable-zone:hover {
+    background-color: rgba(210, 180, 140, 0.4); /* Ярче при наведении */
+}
+
+/* Превью изображения в зоне */
+.zone-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.clickable-zone:hover .zone-preview {
+    opacity: 1;
+}
+
+/* Зоны в режиме редактора */
+.clickable-zone.editor-mode {
+    cursor: move;
+    background-color: rgba(0, 123, 255, 0.3);
+    border-color: rgba(0, 123, 255, 0.9);
+}
+
+.clickable-zone.editor-mode:hover {
+    background-color: rgba(0, 123, 255, 0.5);
+}
+
+/* Ручка для изменения размера */
+.resize-handle {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 0;
+    right: 0;
+    cursor: nwse-resize;
+    background: linear-gradient(135deg, transparent 50%, rgba(0, 123, 255, 0.8) 50%);
+    border-radius: 0 0 4px 0;
+}
+
+/* Название зоны в режиме редактора */
+.zone-label {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+/* Легенда */
+#legend {
+    background-color: #e8e8e8;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: 2px solid #8b7355;
+}
+
+#legend h3 {
+    margin-bottom: 10px;
+    color: #5c4a3d;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.marker {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.marker.enemy {
+    background-color: #dc3545;
+}
+
+.marker.chest {
+    background-color: #ffc107;
+}
+
+.marker.bed {
+    background-color: #28a745;
+}
+
+.marker.building {
+    background-color: #007bff;
+}
+
+/* Модальные окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-y: auto;
+}
+
+.modal-content {
+    background-color: #f5f5dc;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    width: 800px;
+    position: relative;
+    border: 3px solid #8b7355;
+}
+
+.modal-large {
+    max-width: 95%;
+    width: 1200px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #5c4a3d;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #dc3545;
+}
+
+.modal-content h2 {
+    color: #5c4a3d;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Контейнеры карт */
+#outdoor-map-container,
+#indoor-maps-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#outdoor-map-container img,
+#indoor-maps-container img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #8b7355;
+    border-radius: 4px;
+}
+
+/* Метки на картах */
+.map-marker {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    transition: transform 0.2s;
+}
+
+.map-marker:hover {
+    transform: translate(-50%, -50%) scale(1.3);
+}
+
+.map-marker.enemy {
+    background-color: #dc3545;
+    border: 2px solid #fff;
+}
+
+.map-marker.chest {
+    background-color: #ffc107;
+    border: 2px solid #333;
+}
+
+.map-marker.bed {
+    background-color: #28a745;
+    border: 2px solid #fff;
+}
+
+.map-marker.building {
+    background-color: #007bff;
+    border: 2px solid #fff;
+}
+
+/* Тултип для меток */
+.marker-tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 100;
+    transform: translate(-50%, -150%);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .modal-content {
+        margin: 10% auto;
+        width: 95%;
+    }
+
+    .modal-large {
+        width: 95%;
+    }
+
+    #outdoor-map-container,
+    #indoor-maps-container {
+        flex-direction: column;
+    }
+}
+
+/* Панель редактора */
+.editor-panel {
+    background-color: #e8e8e8;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border: 3px solid #007bff;
+}
+
+.editor-panel.hidden {
+    display: none;
+}
+
+.editor-panel h3 {
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.editor-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.editor-btn:hover {
+    background-color: #0056b3;
+}
+
+.editor-btn.delete-btn {
+    background-color: #dc3545;
+}
+
+.editor-btn.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.editor-hint {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Модальное окно маленькое */
+.modal-small {
+    max-width: 500px;
+    width: 90%;
+}
+
+/* Формы в модальных окнах */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5c4a3d;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 2px solid #8b7355;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Метка режима редактора в легенде */
+.marker.editor-mode {
+    background-color: #007bff;
+}
+
+/* Контейнер для этажей */
+.indoor-floor {
+    text-align: center;
+}
+
+.floor-label {
+    background-color: #e8e8e8;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #5c4a3d;
+    display: inline-block;
+}
+
+/* Панель инструментов на карте улицы */
+.outdoor-toolbar {
+    background-color: #e8e8e8;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border: 2px solid #007bff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.outdoor-toolbar.hidden {
+    display: none;
+}
+
+.toolbar-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.3s;
+}
+
+.toolbar-btn:hover {
+    background-color: #0056b3;
+}
+
+.toolbar-btn.active {
+    background-color: #28a745;
+}
+
+.toolbar-hint {
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+    margin-left: auto;
+}
+
+/* Контейнер карты с позиционированием */
+#outdoor-map-container {
+    position: relative;
+    display: inline-block;
+}
+
+#outdoor-map-container img {
+    display: block;
+}
+
+#outdoor-markers-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#outdoor-markers-layer .map-marker {
+    pointer-events: auto;
+}

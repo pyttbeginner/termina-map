@@ -1,6 +1,7 @@
 // ============================================
 // КОНФИГУРАЦИЯ ЗОН
 // Отредактируй этот массив или используй визуальный редактор (клавиша E)
+// bgType: 1-2 = лес, 3 = вода/дерево, 4 = город
 // ============================================
 let worldZones = [
     {
@@ -11,7 +12,8 @@ let worldZones = [
         "width": 113,
         "height": 90,
         "outdoor": "Prehevil_-_Eastern_Outskirts2.png",
-        "thumb": "120px-Prehevil_-_Eastern_Outskirts2.jpg"
+        "thumb": "120px-Prehevil_-_Eastern_Outskirts2.jpg",
+        "bgType": 3
     },
     {
         "id": "prehevil___temple_site_museum2",
@@ -21,7 +23,8 @@ let worldZones = [
         "width": 69,
         "height": 97,
         "outdoor": "Prehevil_-_Temple_Site_Museum2.png",
-        "thumb": "87px-Prehevil_-_Temple_Site_%28Museum%292.jpg"
+        "thumb": "87px-Prehevil_-_Temple_Site_%28Museum%292.jpg",
+        "bgType": 4
     },
     {
         "id": "prehevil___west_back_area2",
@@ -41,7 +44,8 @@ let worldZones = [
         "width": 87,
         "height": 62,
         "outdoor": "Old_Town_-_Slums2.png",
-        "thumb": "120px-Old_Town_-_Slums2.jpg"
+        "thumb": "120px-Old_Town_-_Slums2.jpg",
+        "bgType": 3
     },
     {
         "id": "lake",
@@ -61,7 +65,8 @@ let worldZones = [
         "width": 139,
         "height": 138,
         "outdoor": "Maiden_Forest2.png",
-        "thumb": "120px-Maiden_Forest2.jpg"
+        "thumb": "120px-Maiden_Forest2.jpg",
+        "bgType": 1
     },
     {
         "id": "outskirts_of_prehevil___train",
@@ -71,7 +76,8 @@ let worldZones = [
         "width": 225,
         "height": 144,
         "outdoor": "Outskirts_of_Prehevil_-_Train3.png",
-        "thumb": "120px-Outskirts_of_Prehevil_-_Train3.jpg"
+        "thumb": "120px-Outskirts_of_Prehevil_-_Train3.jpg",
+        "bgType": 3
     },
     {
         "id": "prehevil___west_news_agency2",
@@ -81,7 +87,8 @@ let worldZones = [
         "width": 122,
         "height": 135,
         "outdoor": "Prehevil_-_West_News_Agency2.png",
-        "thumb": "106px-Prehevil_-_West_%28News_Agency%292.jpg"
+        "thumb": "106px-Prehevil_-_West_%28News_Agency%292.jpg",
+        "bgType": 4
     },
     {
         "id": "island",
@@ -91,7 +98,8 @@ let worldZones = [
         "width": 59,
         "height": 63,
         "outdoor": "Island.png",
-        "thumb": "120px-D%27%C3%A1bel%27s_Island2.jpg"
+        "thumb": "120px-D%27%C3%A1bel%27s_Island2.jpg",
+        "bgType": 3
     },
     {
         "id": "path_to_river2",
@@ -101,7 +109,8 @@ let worldZones = [
         "width": 139,
         "height": 84,
         "outdoor": "Path_to_River2.png",
-        "thumb": "120px-Path_to_River2.jpg"
+        "thumb": "120px-Path_to_River2.jpg",
+        "bgType": 3
     },
     {
         "id": "riverside2",
@@ -121,7 +130,8 @@ let worldZones = [
         "width": 161,
         "height": 121,
         "outdoor": "Deeper_Woods5.png",
-        "thumb": "120px-Deeper_Woods5.jpg"
+        "thumb": "120px-Deeper_Woods5.jpg",
+        "bgType": 2
     },
     {
         "id": "deep_woods2",
@@ -131,7 +141,8 @@ let worldZones = [
         "width": 150,
         "height": 121,
         "outdoor": "Deep_Woods2.png",
-        "thumb": "120px-Deep_Woods2.jpg"
+        "thumb": "120px-Deep_Woods2.jpg",
+        "bgType": 2
     },
     {
         "id": "prehevil___ruined_streets2",
@@ -181,7 +192,8 @@ let worldZones = [
         "width": 139,
         "height": 84,
         "outdoor": "Outskirts_of_Prehevil_-_Abandoned_House2.png",
-        "thumb": "120px-Outskirts_of_Prehevil_-_Abandoned_House2.jpg"
+        "thumb": "120px-Outskirts_of_Prehevil_-_Abandoned_House2.jpg",
+        "bgType": 3
     },
     {
         "id": "prehevil___staircase2",
@@ -191,7 +203,8 @@ let worldZones = [
         "width": 82,
         "height": 137,
         "outdoor": "Prehevil_-_Staircase2.png",
-        "thumb": "65px-Prehevil_-_Staircase2.jpg"
+        "thumb": "65px-Prehevil_-_Staircase2.jpg",
+        "bgType": 4
     },
     {
         "id": "outskirts_of_prehevil___broken_shack2",
@@ -201,7 +214,8 @@ let worldZones = [
         "width": 114,
         "height": 67,
         "outdoor": "Outskirts_of_Prehevil_-_Broken_Shack2.png",
-        "thumb": "120px-Outskirts_of_Prehevil_-_Broken_Shack2.jpg"
+        "thumb": "120px-Outskirts_of_Prehevil_-_Broken_Shack2.jpg",
+        "bgType": 3
     },
     {
         "id": "deepest_woods2",
@@ -211,7 +225,8 @@ let worldZones = [
         "width": 116,
         "height": 111,
         "outdoor": "Deepest_Woods2.png",
-        "thumb": "120px-Deepest_Woods2.jpg"
+        "thumb": "120px-Deepest_Woods2.jpg",
+        "bgType": 2
     },
     {
         "id": "hidden_spot2",
@@ -221,7 +236,8 @@ let worldZones = [
         "width": 61,
         "height": 58,
         "outdoor": "Hidden_Spot2.png",
-        "thumb": null
+        "thumb": null,
+        "bgType": 2
     },
     {
         "id": "prehevil___north_west2",
@@ -291,9 +307,17 @@ let worldZones = [
         "width": 113,
         "height": 127,
         "outdoor": "Prehevil_-_Back_Alleys2.png",
-        "thumb": "76px-Prehevil_-_Back_Alleys2.jpg"
+        "thumb": "76px-Prehevil_-_Back_Alleys2.jpg",
+        "bgType": 4
     }
 ];
+
+// Настройки фона (яркость/насыщенность/размытие) - меняй для себя
+const bgSettings = {
+    brightness: 50,      // 30-100 (меньше = темнее)
+    saturation: 80,      // 0-150 (меньше = бледнее)
+    blur: 3              // 0-10 (размытие фона, px)
+};
 
 // ============================================
 // КОНФИГУРАЦИЯ ЗДАНИЙ
@@ -1042,7 +1066,7 @@ function exportMarkers() {
 // ============================================
 function openOutdoorModal(zone) {
     if (editorMode) return; // В режиме редактора не открываем карты
-    
+
     currentOutdoorMap = zone;
     const modal = document.getElementById('outdoor-modal');
     const title = document.getElementById('outdoor-title');
@@ -1051,9 +1075,22 @@ function openOutdoorModal(zone) {
 
     title.textContent = zone.name || 'Локация';
     container.innerHTML = '';
-    
+
     // Показываем панель инструментов
     toolbar.classList.remove('hidden');
+
+    // Добавляем фон на основе bgType
+    const bgType = zone.bgType || 4;
+    const bgDiv = document.createElement('div');
+    bgDiv.className = 'map-background';
+    bgDiv.style.backgroundImage = `url('maps_outdor/bg_neutral${bgType}.jpg')`;
+    
+    // Применяем настройки яркости/насыщенности/размытия
+    bgDiv.style.setProperty('--bg-brightness', bgSettings.brightness + '%');
+    bgDiv.style.setProperty('--bg-saturation', bgSettings.saturation + '%');
+    bgDiv.style.setProperty('--bg-blur', bgSettings.blur + 'px');
+    
+    container.appendChild(bgDiv);
 
     if (zone.outdoor) {
         const img = document.createElement('img');
